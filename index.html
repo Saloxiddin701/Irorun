@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Irorun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </div>
+    </div>
+    <div class="contact"><a href="https://t.me/SaloxDev">Contact Us</a></div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left">
+                <h1 class="title">Get Instant Loans</h1>
+                <p class="text">
+                    Get instant loans with ease on your smartphone.
+                </p>
+                <div class="buttons">
+                    <div class="google">
+                         <i class="bi bi-google"></i>
+                        <div class="item">
+                            <h3>Get it on</h3>
+                            <h2>Google play</h2>
+                        </div>
+                    </div>
+                    <div class="apple">
+                        <i class="bi bi-apple"></i>
+                        <div class="item">
+                            <h3>Download on the</h3>
+                            <h2>App store</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/head-bg.png" alt="">
+        </div>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="main">
+            <img src="images/section.png" alt="">
+            <div class="right">
+                <h1 class="title">Save on your own terms</h1>
+                <p class="text">
+                    Savings give you financial options
+                </p>
+                <div class="buttons">
+                    <div class="google">
+                        <i class="bi bi-google"></i>
+                        <div class="item">
+                            <h3>Get it on</h3>
+                            <h2>Google play</h2>
+                        </div>
+                    </div>
+                    <div class="apple">
+                        <i class="bi bi-apple"></i>
+                        <div class="item">
+                            <h3>Download on the</h3>
+                            <h2>App store</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work">
+    <div class="container">
+        <h1 class="work-title">How it works</h1>
+        <div class="box">
+            <div class="card">
+                <img src="images/1.png" alt="">
+                <h1 class="title">Set up an account</h1>
+                <p class="text">
+                    Download the app for free, sign up and verify your account.
+                </p>
+            </div>
+            <div class="arrow">
+                <i class="bi bi-chevron-right"></i>
+            </div>
+            <div class="card">
+                <img src="images/2.png" alt="">
+                <h1 class="title">Apply for a loan</h1>
+                <p class="text">
+                    Apply for a loan and our technology will run a credit score and decide if you are qualified.
+                </p>
+            </div>
+            <div class="arrow">
+                <i class="bi bi-chevron-right"></i>
+            </div>
+            <div class="card">
+                <img src="images/3.png" alt="">
+                <h1 class="title">Get your cash</h1>
+                <p class="text">
+                    If you qualify, your loan will be disbursed to your wallet.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="get">
+    <div class="container">
+        <div class="wrap">
+            <h1 class="title">Get it on Play Store and download on the App Store</h1>
+            <div class="buttons">
+                <div class="google">
+                    <i class="bi bi-google"></i>
+                    <div class="item">
+                        <h3>Get it on</h3>
+                        <h2>Google play</h2>
+                    </div>
+                </div>
+                <div class="apple">
+                    <i class="bi bi-apple"></i>
+                    <div class="item">
+                        <h3>Download on the</h3>
+                        <h2>App store</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrap">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="ul">
+                <ul>
+                    <li>Office</li>
+                    <li>4 Perez Drive, Lekki</li>
+                    <li>Phase 1, Lagos.</li>
+                </ul>
+                <ul>
+                    <li>Contact</li>
+                    <li>hello@irorun.com</li>
+                    <li>+234 809 666 8877</li>
+                </ul>
+            </div>
+            <div class="parent">
+                <h1 class="title">Powered by YesCredit Limited.</h1>
+                <p class="text">
+                    licensed as a Money Lender by the Lagos State Government of Nigeria.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const navMenu = document.querySelector(".nav-menu");
+    const burger = document.querySelector(".burger");
+    burger.addEventListener('click', mobileMenu);
+    function mobileMenu() {
+        burger.classList.toggle("active")
+        navMenu.classList.toggle("active")
+    }
+
+    navbar = document.querySelector(".nav-menu").querySelectorAll("a");
+    console.log(navbar);
+    navbar.forEach(element => {
+        element.addEventListener('click', function () {
+            navbar.forEach(nav=>nav.classList.remove("active"))
+            this.classList.add("active")
+        })
+    });
+</script>
+</body>
+</html>
