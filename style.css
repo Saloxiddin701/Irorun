@@ -234,15 +234,6 @@ a {
     color: #ffffff;
 }
 
-.work .box .card:nth-child(2) {
-    padding: 42px 10px 50px;
-    border-top: 12px solid #FF814A;
-}
-
-.work .box:nth-child(3) .card {
-    border-top: 12px solid #31C5A1;
-}
-
 .get {
     background: #31C5A1;
 }
